@@ -55,3 +55,52 @@ export const MobileIcon = styled.div`
     cursor: pointer;
   }
 `
+
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: ${({ click }) => (click ? "100%" : "-1000px")};
+    opacity: 1;
+    transition: all 0.2s;
+    background: #fff;
+  }
+`
+export const NavItem = styled.li`
+  height: 80px;
+
+  @media screen and (max-widht: 960px) {
+    width: 100%;
+  }
+`
+
+export const NavLinks = styled(Link)`
+  color: #141414;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #ff4040;
+      transition: all 0.3s ease;
+    }
+  }
+`
