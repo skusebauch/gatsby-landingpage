@@ -65,19 +65,18 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin-left: 0;
     width: 100%;
     height: 90vh;
     position: absolute;
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
-    transition: all 0.2s;
+    transition: all 0.5s;
     background: #fff;
   }
 `
 export const NavItem = styled.li`
-  height: 80px;
-
   @media screen and (max-widht: 960px) {
     width: 100%;
   }
@@ -96,6 +95,7 @@ export const NavLinks = styled(Link)`
     text-align: center;
     padding: 2rem;
     width: 100%;
+    font-size: 50px;
     display: table;
 
     &:hover {
