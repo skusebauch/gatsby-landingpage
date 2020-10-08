@@ -95,7 +95,7 @@ export const NavLinks = styled(Link)`
     text-align: center;
     padding: 2rem;
     width: 100%;
-    font-size: 50px;
+    font-size: 30px;
     display: table;
 
     &:hover {
