@@ -24,7 +24,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click)
 
   const handleNavChange = () =>
-    window.scrollY >= 90 ? setScroll(true) : setScroll(false)
+    window.scrollY >= 400 ? setScroll(true) : setScroll(false)
 
   return (
     <>
