@@ -17,7 +17,6 @@ export const Nav = styled.nav`
   z-index: 2;
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#fff" : "transparent")};
     transition: 0.8s all ease;
   }
 `
@@ -38,6 +37,10 @@ export const NavLogo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 960px) {
+    z-index: 10;
+  }
 `
 
 export const NavIcon = styled(DiScala)`
@@ -53,6 +56,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    z-index: 10;
   }
 `
 
@@ -68,12 +72,13 @@ export const NavMenu = styled.ul`
     justify-content: space-evenly;
     margin-left: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    top: ${({ click }) => (click ? "100%" : "-1000px")};
+    top: ${({ click }) => (click ? "0" : "-5000px")};
     opacity: 1;
     transition: all 0.5s;
     background: #fff;
+    z-index: 5;
   }
 `
 export const NavItem = styled.li`
