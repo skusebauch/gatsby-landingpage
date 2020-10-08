@@ -1,6 +1,6 @@
-.image__container  {
+.image__container {
   text-align: center;
-  margin: 150px;
+  margin: 150px 0;
 }
 
 .image__container h1 {
@@ -14,17 +14,17 @@
   grid-template-rows: minmax(50px, auto);
   margin: 0 auto;
   max-width: 1000px;
+  width: 100%;
   padding: 0 32px;
 }
 
 .image__item:nth-child(5) {
   grid-column-end: span 2;
-  grid-row-start: 4;
 }
 
 .image__item:nth-child(9) {
-  grid-column-end: span 2;
   grid-row-start: 4;
+  grid-column-end: span 2;
 }
 
 .image__grid img:hover {
