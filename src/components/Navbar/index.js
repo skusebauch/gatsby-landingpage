@@ -40,13 +40,19 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks activeClassName="active" to="/">
+                  Home
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/images">Images</NavLinks>
+                <NavLinks activeClassName="active" to="/images">
+                  Images
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/destinations">Destinations</NavLinks>
+                <NavLinks activeClassName="active" to="/destinations">
+                  Destinations
+                </NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

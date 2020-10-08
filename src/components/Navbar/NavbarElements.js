@@ -91,6 +91,10 @@ export const NavLinks = styled(Link)`
   height: 100%;
   font-family: "Ubuntu", sans-serif;
 
+  &.active {
+    color: red;
+  }
+
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
